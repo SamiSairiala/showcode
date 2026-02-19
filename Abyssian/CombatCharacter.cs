@@ -172,7 +172,7 @@ namespace Skydome.Combat
 		private int _pendingHitEvents;
 		private bool _finishEventSeen;
 		private bool _hasPaidResourceCostThisTurn;
-		[HideInInspector] public Material _baseMat;   // spriteís real material ñ cached once
+		[HideInInspector] public Material _baseMat;   // sprite‚Äôs real material ‚Äì cached once
 		private Material _blinkMat;  // reusable blink copy
 		private SpriteRenderer _sr;
 		private Color _originalColor;
@@ -710,7 +710,7 @@ namespace Skydome.Combat
 			Debug.Log($"[HitApplied] pending={_pendingHitEvents}");
 		}
 
-		public void OnActionFinishedFromAnim()   // call this from a final ìEndActionî anim event
+		public void OnActionFinishedFromAnim()   // call this from a final ‚ÄúEndAction‚Äù anim event
 		{
 			_finishEventSeen = true;
 			Debug.Log("Action finished called from anim.");
