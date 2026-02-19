@@ -43,7 +43,7 @@ public class EquipmentMenuController : MonoBehaviour
 	[Header("Character List UI")]
 	[SerializeField] private EquipmentCharacterListUI characterListUI;
 
-	[Tooltip("Optional portraits by party index (0..n-1). Leave empty if you don’t have portraits yet.")]
+	[Tooltip("Optional portraits by party index (0..n-1). Leave empty if you donâ€™t have portraits yet.")]
 	[SerializeField] private List<Sprite> characterPortraits = new();
 	[SerializeField] private Sprite defaultPortrait;
 
@@ -85,7 +85,7 @@ public class EquipmentMenuController : MonoBehaviour
 		if (equipmentItemListUI != null)
 			equipmentItemListUI.SetOnItemSelected(ShowInfoForItem);
 
-		// Keep these (don’t delete)
+		// Keep these (donâ€™t delete)
 		SetSlotSelectedVisual(default, 0);
 		if (equipmentItemListUI != null)
 			equipmentItemListUI.SetCompatibilityFilter(null, autoSelectFirstCompatible: false);
